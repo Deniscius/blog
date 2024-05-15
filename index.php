@@ -8,6 +8,7 @@
     <title>Blog</title>
 </head>
 <body>
-    
+    <h1>Hello world</h1>
+    bonjour tout le monde
 </body>
 </html>
