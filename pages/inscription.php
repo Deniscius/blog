@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-        require_once './includes/menu.php';
+        require_once '../includes/menu.php';
     ?>
 
 <div class="signin">

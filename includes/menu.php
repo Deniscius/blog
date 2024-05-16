@@ -1,22 +1,24 @@
 <header class="menu-bar">
     <table>
         <tr>
-            <td>BLOG
+            <td>BLOG</td>
+            
+            <td>
                 <ul>
                     <li>
                         <a href="/index.php" class="<?=(!isset($_GET["page"]) ? "mrnu-active" : ""); ?>">Home</a>
                     </li>
 
                     <li>
-                        <a href="/pages/articles.php?page=articles" class="<?=(!isset($_GET["page"]) && $_GET["page"] =="articles" ? "menu-active" : ""); ?>">Article</a>
+                        <a href="/blog/pages/articles.php?page=articles" class="<?=(isset($_GET["page"]) && $_GET["page"] =="articles" ? "menu-active" : ""); ?>">Article</a>
                     </li>
 
                     <li>
-                        <a href="/pages/connexion.php?page=connexion" class="<?=(!isset($_GET["page"]) && $_GET["page"] =="articles" ? "menu-active" : ""); ?> ? "menu-active" : ""); ?>">Connexion</a>
+                        <a href="/blog/pages/connexion.php?page=inscription" class="<?=(isset($_GET["page"]) && $_GET["page"] =="incription" ? "menu-active" : ""); ?>">Inscription</a>
                     </li>
 
                     <li>
-                        <a href="/pages/inscription.php?page=inscription" class="<?=(!isset($_GET["page"]) && $_GET["page"] =="articles" ? "menu-active" : ""); ?> ? "menu-active" : ""); ?>">Inscription</a>
+                        <a href="/blog/pages/inscription.php?page=connexion" class="<?=(isset($_GET["page"]) && $_GET["page"] =="conexion" ? "menu-active" : ""); ?>">Connexion</a>
                     </li>
                 </ul>
             </td>
