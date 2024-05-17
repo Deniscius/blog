@@ -8,8 +8,10 @@
     <title>Blog du codeur</title>
 </head>
 <body>
+
     <?php
         require_once './includes/menu.php';
     ?>
+    
 </body>
 </html>

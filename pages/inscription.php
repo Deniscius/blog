@@ -7,12 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-<?php
+    
+    <?php
         require_once '../includes/menu.php';
     ?>
 
 <div class="signin">
-        <form action="">
+
+    <?php
+        if (isset($_GET['email']) && $_GET('email') == 'error') {
+            echo "<h2>Email invalide. veuillez saisir entre 5 et 50 caractères </h2>";
+        }
+
+        if (isset($_GET['password']) && $_GET('password') == 'error') {
+            echo "<h2>Les mots de passe ne sont pas identiques</h2>";
+        }
+    ?>
+
+        <form action="/blog/processing/authentification.php" method="POST">
+            
             <label for="username">Adresse Email</label>
             <input type="email" name="email" id="email" placeholder="Saisir votre adresse email" required>
 

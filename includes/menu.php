@@ -14,11 +14,11 @@
                     </li>
 
                     <li>
-                        <a href="/blog/pages/connexion.php?page=inscription" class="<?=(isset($_GET["page"]) && $_GET["page"] =="incription" ? "menu-active" : ""); ?>">Inscription</a>
+                        <a href="/blog/pages/inscription.php?page=inscription" class="<?=(isset($_GET["page"]) && $_GET["page"] =="incription" ? "menu-active" : ""); ?>">Inscription</a>
                     </li>
 
                     <li>
-                        <a href="/blog/pages/inscription.php?page=connexion" class="<?=(isset($_GET["page"]) && $_GET["page"] =="conexion" ? "menu-active" : ""); ?>">Connexion</a>
+                        <a href="/blog/pages/connexion².php?page=connexion" class="<?=(isset($_GET["page"]) && $_GET["page"] =="conexion" ? "menu-active" : ""); ?>">Connexion</a>
                     </li>
                 </ul>
             </td>
