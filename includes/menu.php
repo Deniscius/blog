@@ -6,7 +6,7 @@
             <td>
                 <ul>
                     <li>
-                        <a href="/index.php" class="<?=(!isset($_GET["page"]) ? "mrnu-active" : ""); ?>">Home</a>
+                        <a href="/blog/index.php" class="<?=(!isset($_GET["page"]) ? "menu-active" : ""); ?>">Home</a>
                     </li>
 
                     <li>

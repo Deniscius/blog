@@ -1,8 +1,8 @@
 <?php
     require("../config/database.php");
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+$username = htmlspecialchars($_POST['username']);
+$password = htmlspecialchars($_POST['password']);
 $hashed_password = md5($password);
 
 

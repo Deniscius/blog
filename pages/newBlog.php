@@ -1,6 +1,6 @@
 <?php
     if (!isset($_COOKIE['username'])) {
-        header('Location: /blog');
+        header('Location: /blog/pages/connexion.php?connexion');
     
     }
 ?>

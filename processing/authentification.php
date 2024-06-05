@@ -9,12 +9,12 @@ $hashed_password = md5($password);
 
 if (strlen($email) < 20 || strlen($email) > 50) {
     header('Location: /blog/pages/inscription.php?page=inscription&email=error');
-    exit();
+    
 }
 
 if  ($password != $confirmation) {
     header('Location: /blog/pages/inscription.php?page=inscription&password=error');
-    exit();
+    
 }
 
 $req = $myPDO->query("INSERT INTO users (email, username, password) VALUES ('$email', '$username', '$hashed_password');");
